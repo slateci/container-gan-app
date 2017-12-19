@@ -33,4 +33,4 @@ COPY app/gan.py /gan.py
 RUN chmod 755 /entrypoint.sh
 
 #execute
-CMD ["/app/entrypoint.sh"]
+CMD ["entrypoint.sh"]

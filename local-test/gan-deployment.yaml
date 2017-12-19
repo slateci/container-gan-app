@@ -5,7 +5,7 @@ metadata:
   labels:
     app: gan
 spec:
-  replicas: 1
+  replicas: 8
   selector:
     matchLabels:
       app: gan
@@ -16,7 +16,5 @@ spec:
     spec:
       containers:
       - name: gan
-        image: slateci/container-gan-app
+        image: slateci/container-gan-app:latest
         # imagePullPolicy: Never #specifically for minikube testing
-        ports:
-        - containerPort: 80
