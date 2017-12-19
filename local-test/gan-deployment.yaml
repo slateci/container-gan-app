@@ -17,6 +17,6 @@ spec:
       containers:
       - name: gan
         image: slateci/container-gan-app
-        imagePullPolicy: Never #specifically for minikube testing
+        # imagePullPolicy: Never #specifically for minikube testing
         ports:
         - containerPort: 80
