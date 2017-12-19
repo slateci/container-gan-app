@@ -20,8 +20,9 @@ RUN pip3 --no-cache-dir install \
     sklearn \
     qtpy \
     tensorflow \
-    keras \
-    RUN python3 -m ipykernel.kernelspec
+    keras 
+
+RUN python3 -m ipykernel.kernelspec
 
 # build info
 RUN echo "Timestamp:" `date --utc` | tee /image-build-info.txt
